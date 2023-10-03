@@ -6,6 +6,8 @@ FROM php:apache
 
 RUN a2enmod rewrite
 
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
 RUN set -xe \
     && apt-get update \
     && apt-get install -y libpng-dev libjpeg-dev libpq-dev libxml2-dev libldap-dev libfreetype6-dev \
