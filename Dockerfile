@@ -14,7 +14,7 @@ RUN set -xe \
     && rm -rf /var/lib/apt/lists/*
 
 ENV MANTIS_VER 2.25.7
-ENV MANTIS_SHA512 17bfc75629c8b172a197fb2424ebedfddb5ca0759793ddda98b2c4d60c96a71f88a252059db81a432884a5db1955da0c094bbbc0b20567e326b2afa5f6643319
+ENV MANTIS_SHA512 5afbf0820dcd572c326abbde14564242bfbcf4d7937e6821ce71c228a57b05da259b0bea97b241aa71e4bb03a0d759eaf58cb61ea1cb0c3d8ea63da57e6aa816
 ENV MANTIS_URL https://downloads.sourceforge.net/project/mantisbt/mantis-stable/${MANTIS_VER}/mantisbt-${MANTIS_VER}.tar.gz
 ENV MANTIS_FILE mantisbt.tar.gz
 ENV MANTIS_TIMEZONE Europe/Berlin
